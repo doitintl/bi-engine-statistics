@@ -1,6 +1,8 @@
 # bi-engine-statistics
 a opinionated bi engine statistics dashboard for datastudio, to monitor and optimize your BI Engine workloads.
 
+<img width="1212" alt="Screenshot 2022-06-15 at 11 49 01" src="https://user-images.githubusercontent.com/44622670/173798578-2e4f0194-0b2c-4d0c-9177-e6ecfd6881f1.png">
+
 # Getting started
 ## Prerequisites 
 In order to create the dashboard and query the INFORMATION_SCHEMA tables a user must have access to the following INFORMATION_SCHEMA table:
