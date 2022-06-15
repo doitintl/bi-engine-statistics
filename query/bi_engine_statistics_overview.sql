@@ -22,7 +22,6 @@ FROM
 `region-eu`.INFORMATION_SCHEMA.JOBS_BY_PROJECT
 LEFT JOIN  UNNEST(bi_engine_statistics.bi_engine_reasons) as bi_engine_reason
 WHERE job_type = "QUERY"
-AND user_email NOT LIKE "doit-intl.com"
 AND destination_table.table_id LIKE "anon%" -- only queries with anoumous destination tables
 GROUP BY 1,2,3,4,5,6,7,8
 
