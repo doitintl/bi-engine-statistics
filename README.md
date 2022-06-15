@@ -9,11 +9,11 @@ In order to create the dashboard and query the INFORMATION_SCHEMA tables a user 
 
 ## Datasource
 ### 1.1 Copy the datasource
-Log in to Data Studio and create a copy of the ([data source](https://datastudio.google.com/datasources/d42dfc2c-71d4-46a3-ba38-bdd080e9472f) . More information on copying data sources can be found here [^1]. 
+Log in to Data Studio and create a copy of the [data source](https://datastudio.google.com/datasources/d42dfc2c-71d4-46a3-ba38-bdd080e9472f) . More information on copying data sources can be found here[^1]. 
 ### 1.2 Set the correct GCP Billing project
 Set it to the project, where you have made the BI Engine reservation.
 ### 1.3 Modify the data source: 
-We used region-eu in our example, however you can modify this to a region of your choice (where your BI Engine capacity is reserved).  Use the following format to specify regionality for the project-id, region, and views in the INFORMATION_SCHEMA view [^2]:
+We used region-eu in our example, however you can modify this to a region of your choice (where your BI Engine capacity is reserved).  Use the following format to specify regionality for the project-id, region, and views in the INFORMATION_SCHEMA view[^2]:
 ```
 `PROJECT_ID`.`region-REGION_NAME`.INFORMATION_SCHEMA.VIEW 
 ```
